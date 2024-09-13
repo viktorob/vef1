@@ -71,14 +71,14 @@ legend {
 }
 
 .forsidumynd {
-    display: inline;
+    display: float;
     max-width: 25em;
 }
 
 /** Lætur myndir aldrei taka meira pláss en foreldri skilgreinir **/
 img {
     max-width: 100%;
-    border-radius: 1em;
+    border-radius: 5px;
 }
 
 /** Litur á hlekkjum erfist frá foreldri **/
@@ -119,28 +119,39 @@ header {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
 }
 
 /** Valmynd **/
 
 nav {
-    display: inline-block;
     width: 100%;
     background-color: #eebbdd;
     border-bottom: 4px solid #cc99bb;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav ul {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 nav li {
     display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /* Valin síða í nav t.d. verður bold*/
 strong {
     font-family: OpenSans;
-    font-style: bold;
+    font-weight: bold;
 }
 
 /* TODO Skilgreina aðra selectora fyrir valmynd */
@@ -149,6 +160,9 @@ strong {
 
 main {
     /* TODO Skilgreina */
+    margin-bottom: 1em;
+    max-width: 900px;
+    padding: 1rem 0;
 }
 
 /* TODO Skilgreina aðra selectora fyrir meginmál of forsíðu */
@@ -156,10 +170,13 @@ main {
 /** Fótur **/
 
 footer {
-    /* TODO Skilgreina */
     background-color: #eebbdd;
     border-top: 4px solid #cc99bb;
     text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
 }
 
 /* Ef við notum section fyrir hvert svæði undir fót, þá er hægt að nota eftirfarandi */
@@ -170,13 +187,20 @@ footer > section {
     /* TODO fleiri skilgreiningar */
 }
 
+footer h2 {
+    margin-bottom: 0.5em;
+}
+
 footer ul {
     list-style: none;
-    
 }
 
 footer dt {
     font-weight: bold;
+}
+
+footer dd {
+    margin-bottom: 0.5em;
 }
 
 /* TODO Skilgreina aðra selectora fyrir fót */
