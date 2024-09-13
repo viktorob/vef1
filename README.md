@@ -2,5 +2,6 @@
 ## Viktor Óli Bjarkason
 
 ### Verkefni 3
-[Lausn]('/v3/')
-[Hýsing]('https://vef1-2024-v3-vob.netlify.app/')
+[Lausn](/v3/)
+
+[Hýsing](https://vef1-2024-v3-vob.netlify.app/)
